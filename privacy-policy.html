@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mochi's privacy policy: no ads, no tracking, no account. Learn how screen buddies, custom images, shortcuts and Android permissions work.">
+  <meta name="theme-color" content="#fffcf5">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Privacy policy · Mochi</title>
+  <!-- Self-contained page for GitHub Pages. No scripts, external fonts, trackers or external image requests. -->
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #292c27;
+      --muted: #62665b;
+      --cream: #fffcf5;
+      --lime: #dfee96;
+      --sage: #eaf0dc;
+      --peach: #ffe2d3;
+      --lavender: #e9e4f7;
+      --line: #e6e7dd;
+      --white: #fff;
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--ink);
+      outline-offset: 5px;
+      border-radius: 6px;
+    }
+    svg { display: block; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { line-height: 1.16; }
+    h1 { margin-bottom: 22px; font-size: clamp(44px, 5.5vw, 72px); letter-spacing: -3.5px; font-weight: 650; }
+    h2 { margin-bottom: 0; font-size: clamp(23px, 2.2vw, 29px); letter-spacing: -.7px; font-weight: 650; }
+    h3 { margin-bottom: 10px; font-size: 18px; letter-spacing: -.25px; font-weight: 650; }
+    p { margin-bottom: 16px; }
+    p:last-child { margin-bottom: 0; }
+    strong { font-weight: 650; }
+    .wrap { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+    .skip {
+      position: absolute;
+      top: -100px;
+      left: 20px;
+      padding: 12px 20px;
+      z-index: 10;
+      background: var(--ink);
+      color: var(--white);
+    }
+    .skip:focus { top: 14px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 30px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark { display: grid; place-items: center; width: 46px; height: 46px; background: var(--lime); border-radius: 15px; }
+    .wordmark { font-size: 25px; font-weight: 750; letter-spacing: -1px; }
+    .toplink { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 99px; font-size: 14px; text-decoration: none; }
+    .toplink:hover { background: var(--sage); }
+    .hero { display: grid; grid-template-columns: 1.35fr 1fr; align-items: stretch; gap: 48px; padding-block: 30px 46px; }
+    .hero-copy { padding-block: 18px 8px; }
+    .eyebrow { margin-bottom: 22px; font-size: 12px; font-weight: 750; letter-spacing: 2px; text-transform: uppercase; }
+    .hero-description { max-width: 500px; color: var(--muted); font-size: 19px; line-height: 1.65; }
+    .date { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 25px; color: var(--muted); font-size: 13px; }
+    .date span { display: inline-flex; align-items: center; gap: 8px; }
+    .dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+    .hero-art { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 350px; padding: 24px; border-radius: 42px; background: var(--sage); overflow: hidden; }
+    .hero-art::before { position: absolute; inset: 22px; border: 1px solid #d7dfc4; border-radius: 26px; content: ""; }
+    .hero-art svg { position: relative; width: min(100%, 288px); height: 242px; }
+    .art-caption { position: relative; margin: 8px 0 0; font-size: 16px; font-weight: 650; text-align: center; }
+    .promises { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 54px; }
+    .promise { display: flex; align-items: center; gap: 12px; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--white); }
+    .promise-icon { display: grid; place-items: center; flex: 0 0 34px; height: 34px; border-radius: 11px; background: var(--sage); }
+    .promise:nth-child(2) .promise-icon { background: var(--peach); }
+    .promise:nth-child(3) .promise-icon { background: var(--lavender); }
+    .promise:nth-child(4) .promise-icon { background: var(--lime); }
+    .promise strong { display: block; font-size: 15px; }
+    .promise small { display: block; color: var(--muted); font-size: 12px; line-height: 1.4; }
+    .layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 42px; align-items: start; }
+    .contents { position: sticky; top: 24px; }
+    .contents-label { margin: 0 0 16px 12px; color: var(--muted); font-size: 12px; font-weight: 750; letter-spacing: 1.5px; text-transform: uppercase; }
+    .contents ol { display: grid; gap: 3px; padding: 0; margin: 0; list-style: none; }
+    .contents a { display: flex; align-items: center; gap: 14px; min-height: 44px; padding: 10px 12px; border-radius: 12px; font-size: 14px; text-decoration: none; }
+    .contents a:hover { background: var(--sage); }
+    .contents a span { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+    .contents-note { margin: 26px 12px 0; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.6; }
+    .policy { min-width: 0; }
+    .section { margin-bottom: 20px; padding: 34px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+    .section-head { display: flex; align-items: center; gap: 15px; margin-bottom: 24px; }
+    .section-number { display: grid; place-items: center; flex: 0 0 36px; height: 36px; border-radius: 12px; background: var(--sage); font-size: 12px; font-weight: 750; }
+    .intro { color: var(--muted); }
+    .callout { margin-top: 24px; padding: 22px 24px; border-radius: 18px; background: var(--sage); font-size: 15px; }
+    .callout strong { display: block; margin-bottom: 5px; }
+    .callout.peach { background: var(--peach); }
+    .callout.lavender { background: var(--lavender); }
+    .data-table { width: 100%; margin-block: 22px; border-collapse: collapse; text-align: left; font-size: 14px; }
+    .data-table caption { text-align: left; margin-bottom: 14px; font-size: 16px; font-weight: 650; }
+    .data-table th { padding: 12px 14px; border-block: 1px solid var(--line); background: var(--cream); font-size: 12px; font-weight: 650; }
+    .data-table td { padding: 17px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .data-table th:first-child { width: 25%; }
+    .data-table th:last-child { width: 27%; }
+    .data-table td:first-child { font-weight: 650; }
+    .data-table td:last-child { color: var(--muted); }
+    .permissions { display: grid; gap: 0; margin-top: 22px; }
+    .permission { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; padding-block: 20px; border-top: 1px solid var(--line); }
+    .permission p { color: var(--muted); font-size: 15px; }
+    .tag { display: inline-block; margin-top: 10px; padding: 3px 10px; border-radius: 99px; background: var(--sage); font-size: 11px; font-weight: 650; }
+    .tag.optional { background: var(--peach); }
+    .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-block: 22px; }
+    .choice { padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: var(--cream); }
+    .choice h3 { font-size: 16px; }
+    .choice p { color: var(--muted); font-size: 14px; }
+    .bullets { margin: 20px 0; padding-left: 22px; }
+    .bullets li { margin-bottom: 10px; padding-left: 3px; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .library-list { display: grid; gap: 10px; margin-block: 24px; }
+    .library { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 14px 18px; border-radius: 12px; background: var(--cream); font-size: 14px; }
+    .library span { color: var(--muted); text-align: right; }
+    .fine { color: var(--muted); font-size: 14px; }
+    details { margin-top: 24px; border: 1px solid var(--line); border-radius: 18px; }
+    summary { padding: 18px 20px; cursor: pointer; font-size: 15px; font-weight: 650; }
+    summary:hover { background: var(--cream); border-radius: 18px; }
+    .credits { padding-inline: 20px; }
+    .credit { padding-block: 18px; border-top: 1px solid var(--line); }
+    .credit h3 { font-size: 15px; }
+    .credit p { margin-bottom: 8px; color: var(--muted); font-size: 14px; }
+    .credit-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+    .credit-links a { display: inline-flex; align-items: center; min-height: 36px; font-size: 13px; }
+    .contact { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+    .contact .section-number { background: var(--lime); color: var(--ink); }
+    .contact .intro, .contact .fine { color: #d2d6c8; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+    .contact-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 18px; border: 1px solid #6b7062; border-radius: 14px; font-size: 14px; text-decoration: none; }
+    .contact-links a:first-child { color: var(--ink); background: var(--lime); border-color: var(--lime); }
+    .contact-links a:hover { box-shadow: 0 0 0 2px currentColor; }
+    .contact a:focus-visible { outline-color: var(--lime); }
+    .contact .developer { font-size: 18px; font-weight: 650; }
+    .footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 30px 40px; margin-top: 20px; color: var(--muted); font-size: 13px; }
+    .footer a { display: inline-flex; align-items: center; min-height: 44px; }
+    @media (max-width: 950px) {
+      .hero { gap: 28px; }
+      .hero-art { min-height: 330px; }
+      .promises { grid-template-columns: repeat(2, 1fr); }
+      .layout { grid-template-columns: 175px minmax(0, 1fr); gap: 22px; }
+      .section { padding: 26px; }
+    }
+    @media (max-width: 740px) {
+      .wrap { width: min(600px, calc(100% - 36px)); }
+      .topbar { padding-block: 20px; }
+      .hero { grid-template-columns: 1fr; gap: 20px; padding-block: 12px 26px; }
+      h1 { letter-spacing: -2px; }
+      .hero-copy { padding-block: 12px 0; }
+      .eyebrow { margin-bottom: 18px; }
+      .hero-description { font-size: 17px; }
+      .hero-art { min-height: 280px; border-radius: 30px; padding-block: 18px; }
+      .hero-art svg { height: 208px; }
+      .hero-art::before { inset: 14px; border-radius: 20px; }
+      .promises { gap: 10px; margin-bottom: 30px; }
+      .promise { gap: 10px; padding: 15px 12px; border-radius: 16px; }
+      .promise strong { font-size: 14px; }
+      .promise small { font-size: 11px; }
+      .layout { display: block; }
+      .contents { position: static; margin-bottom: 28px; }
+      .contents-label { margin-left: 0; }
+      .contents ol { display: flex; flex-wrap: wrap; gap: 8px; }
+      .contents a { gap: 8px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--white); font-size: 12px; }
+      .contents-note { display: none; }
+      .section { padding: 24px 20px; border-radius: 24px; }
+      .section-head { gap: 12px; margin-bottom: 20px; }
+      .section-number { flex-basis: 32px; height: 32px; border-radius: 10px; }
+      .data-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+      .data-table tbody, .data-table tr, .data-table td { display: block; width: 100%; }
+      .data-table tr { padding-block: 15px; border-top: 1px solid var(--line); }
+      .data-table tr:last-child { border-bottom: 1px solid var(--line); }
+      .data-table td { padding: 5px 0; border: 0; }
+      .data-table td:first-child { padding-top: 0; font-size: 16px; }
+      .data-table td:last-child { font-size: 13px; }
+      .data-table td:last-child::before { content: "Storage: "; font-weight: 650; }
+      .permission { grid-template-columns: 1fr; gap: 10px; }
+      .permission h3 { margin-bottom: 0; }
+      .tag { margin-top: 8px; }
+      .choices { grid-template-columns: 1fr; }
+      .callout { padding: 18px; }
+      .library { display: block; }
+      .library span { display: block; margin-top: 4px; text-align: left; }
+      .contact-links { flex-direction: column; align-items: stretch; }
+      .footer { align-items: flex-start; font-size: 12px; }
+      .footer p { max-width: 220px; }
+    }
+    @media (max-width: 360px) {
+      .wrap { width: calc(100% - 28px); }
+      .toplink { padding-inline: 12px; font-size: 12px; }
+      .promise { gap: 8px; padding-inline: 10px; }
+      .promise-icon { flex-basis: 28px; height: 28px; }
+      .promise small { display: none; }
+      .section { padding-inline: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .wrap { width: 100%; }
+      .skip, .contents, .hero-art, .toplink, .footer a { display: none; }
+      .hero { display: block; padding-block: 10px 20px; }
+      h1 { font-size: 34pt; }
+      h2 { font-size: 18pt; }
+      .promises { margin-bottom: 20px; }
+      .promise { padding: 12px; }
+      .layout { display: block; }
+      .section { padding: 20px; border-radius: 14px; }
+      .section-head, .credit, .permission, .choice { break-inside: avoid; }
+      .contact { background: white; color: var(--ink); border-color: var(--line); }
+      .contact .intro, .contact .fine { color: var(--muted); }
+      .contact-links a { color: var(--ink); }
+      details { border: 0; }
+      details::details-content { content-visibility: visible; }
+      .credits { display: block; padding: 0; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#policy">Skip to privacy policy</a>
+  <header class="topbar wrap">
+    <a class="brand" href="#top" aria-label="Mochi, back to top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M6 15 5 6l9 5h4l9-5-1 9c2 3 1 8-2 10-4 3-12 3-16 0-3-2-4-7-2-10Z" fill="#fffcf5" stroke="#292c27" stroke-width="1.8" stroke-linejoin="round"/>
+          <circle cx="11" cy="19" r="1.4" fill="#292c27"/><circle cx="21" cy="19" r="1.4" fill="#292c27"/>
+          <path d="m14 22 2 1 2-1" stroke="#292c27" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="wordmark">mochi</span>
+    </a>
+    <a class="toplink" href="https://github.com/ak375456">Meet the developer <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Mochi · Privacy policy</p>
+        <h1 id="page-title">Privacy,<br>made simple.</h1>
+        <p class="hero-description">A little company for your screen. Your images, character settings and shortcuts stay under your control, with no ads or in-app tracking.</p>
+        <div class="date">
+          <span><span class="dot" aria-hidden="true"></span> Effective 8 October 2026</span>
+          <span>Applies to the Mochi Android app</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 288 242" fill="none">
+          <circle cx="227" cy="47" r="21" fill="#e9e4f7"/>
+          <path d="m233 42-10 10m0-10 10 10" stroke="#929079" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="43" cy="173" r="29" fill="#ffe2d3"/>
+          <rect x="73" y="7" width="142" height="224" rx="29" fill="#fffcf5" stroke="#292c27" stroke-width="2.5"/>
+          <rect x="84" y="18" width="120" height="202" rx="20" fill="#fff" stroke="#e6e7dd"/>
+          <circle cx="144" cy="32" r="11" stroke="#c3d782" stroke-width="3"/>
+          <circle cx="144" cy="32" r="4" fill="#292c27"/>
+          <path d="M144 48v38" stroke="#929079" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M133 85c-8-6-17-1-17 6-7-1-12 4-12 10 0 7 5 11 12 11h48c8 0 13-5 13-12 0-7-6-12-14-10-5-9-19-10-24-2l-6-3Z" fill="#e9e4f7" stroke="#292c27" stroke-width="1.5"/>
+          <circle cx="134" cy="99" r="1.7" fill="#292c27"/><circle cx="151" cy="99" r="1.7" fill="#292c27"/>
+          <path d="M139 102q4 4 7 0" stroke="#292c27" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="98" y="128" width="92" height="9" rx="4.5" fill="#eaf0dc"/>
+          <rect x="110" y="143" width="68" height="6" rx="3" fill="#f0f0e8"/>
+          <path d="M122 185c-7-4-8-12-5-17l-1-13 12 7h21l11-7-1 14c5 8 0 18-9 20l-28-4Z" fill="#dfee96" stroke="#292c27" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M125 184v13h27v-12" fill="#dfee96"/>
+          <path d="M125 184v13h27v-12m0 8c12 4 17-1 15-7" stroke="#292c27" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="129" cy="174" r="1.7" fill="#292c27"/><circle cx="146" cy="174" r="1.7" fill="#292c27"/>
+          <path d="m134 178 3 2 3-2" stroke="#292c27" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M97 198h91" stroke="#e6e7dd" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="126" y="208" width="36" height="3" rx="1.5" fill="#292c27"/>
+          <circle cx="234" cy="169" r="28" fill="#292c27"/>
+          <path d="M225 168v-6a9 9 0 0 1 18 0v6" stroke="#dfee96" stroke-width="2"/>
+          <rect x="222" y="167" width="24" height="18" rx="5" fill="#dfee96"/>
+          <path d="M234 173v6" stroke="#292c27" stroke-width="2" stroke-linecap="round"/>
+          <path d="m49 65 2-7 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z" fill="#c3d782"/>
+        </svg>
+        <p class="art-caption">Your buddies. Your space.</p>
+      </div>
+    </section>
+
+    <div class="promises" aria-label="Privacy at a glance">
+      <div class="promise"><span class="promise-icon" aria-hidden="true">✓</span><div><strong>No ads</strong><small>No advertising SDKs</small></div></div>
+      <div class="promise"><span class="promise-icon" aria-hidden="true">✓</span><div><strong>No tracking</strong><small>No analytics or profiling</small></div></div>
+      <div class="promise"><span class="promise-icon" aria-hidden="true">✓</span><div><strong>No account</strong><small>No sign-up required</small></div></div>
+      <div class="promise"><span class="promise-icon" aria-hidden="true">✓</span><div><strong>Local editing</strong><small>Your images stay on-device</small></div></div>
+    </div>
+
+    <div class="layout">
+      <nav class="contents" aria-label="Policy sections">
+        <p class="contents-label">On this page</p>
+        <ol>
+          <li><a href="#about"><span>01</span>About Mochi</a></li>
+          <li><a href="#data"><span>02</span>Data on your device</a></li>
+          <li><a href="#permissions"><span>03</span>Permissions</a></li>
+          <li><a href="#storage"><span>04</span>Storage &amp; backup</a></li>
+          <li><a href="#choices"><span>05</span>Your choices</a></li>
+          <li><a href="#dependencies"><span>06</span>Dependencies</a></li>
+          <li><a href="#artwork"><span>07</span>Artwork &amp; inspiration</a></li>
+          <li><a href="#external"><span>08</span>External services</a></li>
+          <li><a href="#contact"><span>09</span>Contact &amp; updates</a></li>
+        </ol>
+        <p class="contents-note">No hidden fine print.<br>This page explains what the app uses, why it uses it and how you can remove it.</p>
+      </nav>
+
+      <div class="policy" id="policy">
+        <section class="section" id="about" aria-labelledby="about-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">01</span><h2 id="about-title">A little about Mochi</h2></div>
+          <p>Mochi is an Android screen-companion app developed by <strong>Aftab Fazal</strong>. It lets you add animated walking buddies, hanging characters and camera-notch decorations. You can adjust each buddy, create a hanging character from your own image, and optionally link a buddy to an app or phone number.</p>
+          <p>Mochi has <strong>no advertising, analytics, tracking SDKs or account system</strong>. It does not sell, rent or trade your in-app data, and does not upload your images, contacts, shortcuts or settings to the developer. The app does not request Android's internet permission or run a developer-operated backend.</p>
+          <div class="callout"><strong>Local by design</strong>The app's features process data on your device. Android backup, a phone call, an external link or a message you send us can involve separate services; those situations are explained below.</div>
+        </section>
+
+        <section class="section" id="data" aria-labelledby="data-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">02</span><h2 id="data-title">Data used on your device</h2></div>
+          <p class="intro">Mochi uses only the information needed for the features you choose. This is local app data, not information automatically sent to us.</p>
+          <table class="data-table">
+            <caption>What is used and why</caption>
+            <thead><tr><th scope="col">Information</th><th scope="col">Purpose</th><th scope="col">Storage</th></tr></thead>
+            <tbody>
+              <tr><td>Buddy settings</td><td>Remember sizes, positions, animation speeds, favourites, names, rope styles, running state and temporary hiding.</td><td>Private app settings until changed or cleared.</td></tr>
+              <tr><td>Selected images</td><td>Make a custom hanging buddy. Erasing, restoring, circle cuts, feathering and rope placement happen on-device.</td><td>Drafts in private cache; saved cutouts in private app files.</td></tr>
+              <tr><td>App shortcuts</td><td>Show available launcher apps and remember the app you select for a buddy.</td><td>Chosen app name and package identifier in private settings; app list is used locally.</td></tr>
+              <tr><td>Optional phone shortcut</td><td>Use a number you enter or the name and number from one contact you select.</td><td>Private phone-shortcut settings until replaced, removed or cleared.</td></tr>
+              <tr><td>Device state</td><td>Read battery level and charging state for the battery ring; screen, lock and power-saving state for pausing; display and camera-cutout geometry for placement.</td><td>Used locally as needed; no activity or battery-history profile is kept.</td></tr>
+            </tbody>
+          </table>
+          <p>Mochi does not read your messages, browsing history, call logs or the contents of other apps. It does not record your screen, camera or microphone, and it does not read other apps' notifications.</p>
+          <p class="fine">Creating a character does not send your image to an AI service. Any AI assistance used to make built-in illustrations is separate from the app's on-device editing features.</p>
+        </section>
+
+        <section class="section" id="permissions" aria-labelledby="permissions-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">03</span><h2 id="permissions-title">Permissions, explained</h2></div>
+          <p class="intro">Android controls permissions. You can review or revoke them in your device's app settings.</p>
+          <div class="permissions">
+            <div class="permission"><div><h3>Display over other apps</h3><span class="tag">For screen buddies</span></div><p>Places small, interactive characters above other apps. It is not used to read the underlying screen, capture screenshots or collect what you type.</p></div>
+            <div class="permission"><div><h3>Foreground service</h3><span class="tag">While buddies run</span></div><p>Keeps user-enabled companions running. Android's foreground-service permissions support this visible feature, with notification controls to stop or temporarily hide buddies.</p></div>
+            <div class="permission"><div><h3>Notifications</h3><span class="tag">Android 13 and later</span></div><p>Shows Mochi's running status and controls. This permission allows Mochi to display its own notification; it does not give access to your notification inbox.</p></div>
+            <div class="permission"><div><h3>Phone calls</h3><span class="tag optional">Optional</span></div><p>Requested only if you choose “Call immediately” for a phone shortcut. The default option opens the dialer for review without this permission. Mochi does not record calls or access your call history.</p></div>
+            <div class="permission"><div><h3>Image &amp; contact pickers</h3><span class="tag optional">Your selection only</span></div><p>Android's pickers give access to the image or phone entry you choose. Mochi does not request unrestricted gallery access or permission to read your whole address book. You can type a number instead.</p></div>
+          </div>
+          <div class="callout peach"><strong>A camera decoration does not use your camera</strong>The app uses the screen's reported cutout position to place a decoration. No camera, microphone, location or accessibility-service permission is requested.</div>
+        </section>
+
+        <section class="section" id="storage" aria-labelledby="storage-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">04</span><h2 id="storage-title">Storage, security &amp; backup</h2></div>
+          <p>Settings and saved characters are kept in Mochi's private Android app storage. The app relies on Android's application sandbox and your device's security. It does not maintain a cloud copy or offer a cloud-sync account.</p>
+          <p>Custom cutouts are saved as transparent <strong>lossless WebP on Android 11 and later</strong>, with PNG used on older supported versions. Editing drafts use private cache, which may be removed when a draft is saved or discarded, when app data is cleared, or by Android. Your original gallery image is not edited or deleted.</p>
+          <div class="callout lavender"><strong>Android backup is a separate service</strong>If system backup or device transfer is enabled, Android may copy general settings, including character names and selected app shortcuts. Mochi's backup rules exclude saved custom image files and phone-shortcut names and numbers from Android cloud backup and device transfer. Backup behaviour also depends on your Android version, device manufacturer and system settings.</div>
+          <p class="fine" style="margin-top:18px">You can manage system backup through Android's settings. Any system backup is handled by your chosen backup provider, not by a Mochi server. See <a href="https://developer.android.com/identity/data/autobackup">Android's backup documentation</a> for how the platform handles app data.</p>
+        </section>
+
+        <section class="section" id="choices" aria-labelledby="choices-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">05</span><h2 id="choices-title">You're in control</h2></div>
+          <div class="choices">
+            <div class="choice"><h3>Delete a custom buddy</h3><p>Deleting a custom character removes its saved cutout, settings and linked phone shortcut from the app.</p></div>
+            <div class="choice"><h3>Remove a shortcut</h3><p>Change or clear the shortcut in that buddy's settings. Removing a phone shortcut deletes the stored name and number for that buddy.</p></div>
+            <div class="choice"><h3>Stop or hide buddies</h3><p>Use the app or notification controls. Stopping or hiding keeps your saved settings so you can use the same setup later.</p></div>
+            <div class="choice"><h3>Clear everything locally</h3><p>Use Android's “Clear storage” / “Clear data” option or uninstall Mochi to remove its local files and preferences.</p></div>
+          </div>
+          <p>Saved data remains until you change or delete it, clear app storage or uninstall the app. Clearing app data does not delete your original gallery images, another app's data or an existing system backup. Android may restore general settings from a backup when you reinstall, depending on your backup settings.</p>
+          <p class="fine">There is no Mochi online account to delete. Because in-app data is held on your device, the developer cannot retrieve it remotely; local deletion is managed through the app and Android.</p>
+        </section>
+
+        <section class="section" id="dependencies" aria-labelledby="dependencies-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">06</span><h2 id="dependencies-title">What the app is built with</h2></div>
+          <p class="intro">Mochi uses Android and Kotlin libraries for its interface, lifecycle, local editing and background tasks. These are software dependencies, not advertising or analytics services.</p>
+          <div class="library-list">
+            <div class="library"><strong>Android platform APIs</strong><span>Drawing, image decoding, storage and system pickers</span></div>
+            <div class="library"><strong>AndroidX Core &amp; Activity</strong><span>Android integration and activity results</span></div>
+            <div class="library"><strong>AndroidX Lifecycle</strong><span>App and screen lifecycle management</span></div>
+            <div class="library"><strong>Jetpack Compose &amp; Material 3</strong><span>Interface, graphics and controls</span></div>
+            <div class="library"><strong>Kotlin &amp; coroutines</strong><span>App logic and local background work</span></div>
+          </div>
+          <p>AndroidX support components may also be included through these libraries. Mochi does not integrate ad networks, Firebase Analytics, third-party tracking SDKs or a remote image-processing service.</p>
+          <p class="fine">Gradle and the Android build tools build the app. JUnit, Espresso and Compose testing tools are used for development and verification; they do not provide advertising or user analytics. Library and artwork notices remain subject to their respective licences.</p>
+        </section>
+
+        <section class="section" id="artwork" aria-labelledby="artwork-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">07</span><h2 id="artwork-title">Artwork &amp; inspiration</h2></div>
+          <p>Mochi is an independent app inspired by the idea of playful screen companions, including apps such as Yumo. It is not affiliated with or endorsed by Yumo. The app includes original and AI-assisted illustrations, character-inspired designs and credited community artwork.</p>
+          <p>We respect creators' rights and do not claim ownership of third-party characters, brands or source artwork. Inspiration, redrawing or AI generation does not itself grant rights to somebody else's character. Please import only images you own or are authorised to use.</p>
+          <details>
+            <summary>View community artwork credits &amp; licences</summary>
+            <div class="credits">
+              <div class="credit"><h3>pzUH / GameArt2D</h3><p>Cat &amp; Dog Free Sprites · Socks and Biscuit. Original walking frames assembled into sprite sheets.</p><div class="credit-links"><a href="https://opengameart.org/content/cat-dog-free-sprites">Source artwork ↗</a><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 licence ↗</a></div></div>
+              <div class="credit"><h3>Kenney Vleugels</h3><p>Animal Pack Remastered · animal charms and camera companions. Original illustrations combined with Mochi's cords and camera rings.</p><div class="credit-links"><a href="https://kenney.nl/assets/animal-pack-remastered">Source artwork ↗</a><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 licence ↗</a></div></div>
+              <div class="credit"><h3>Segel</h3><p>Tiny Kitten Game Sprite · Pebble. Original ten run frames mirrored to face right.</p><div class="credit-links"><a href="https://opengameart.org/content/tiny-kitten-game-sprite">Source artwork ↗</a><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 licence ↗</a></div></div>
+              <div class="credit"><h3>Shepardskin</h3><p>Cat sprites · Inky. Original six walking frames mirrored with a transparent background.</p><div class="credit-links"><a href="https://opengameart.org/content/cat-sprites">Source artwork ↗</a><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 licence ↗</a></div></div>
+              <div class="credit"><h3>Solip Park / Playable Concepts</h3><p>Vector Style Characters · Velvet, Wish and Orbit. Original illustrations used as hanging charms; Orbit's separate ground shadow is cropped out.</p><div class="credit-links"><a href="https://playableconcepts.aalto.fi/portfolio/art-assets-vector-style-characters/">Source artwork ↗</a><a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0 licence ↗</a></div></div>
+              <div class="credit"><h3>Twemoji</h3><p>Cat face, heart-eyes cat and octopus · Purrl, Cupid and Inklet. Copyright 2019 Twitter, Inc. and other contributors. Original SVG artwork rendered for Mochi's charms and rings.</p><div class="credit-links"><a href="https://github.com/twitter/twemoji/tree/v14.0.2">Source artwork ↗</a><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence ↗</a></div></div>
+            </div>
+          </details>
+          <p class="fine" style="margin-top:20px">Artwork credits are also available inside the app. Third-party licences do not imply endorsement. For an attribution concern or artwork removal request, contact the developer below with the character name and the relevant details.</p>
+        </section>
+
+        <section class="section" id="external" aria-labelledby="external-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">08</span><h2 id="external-title">When another service is involved</h2></div>
+          <ul class="bullets">
+            <li><strong>Opening an app:</strong> a shortcut launches the app you selected. That app handles its own permissions and data practices.</li>
+            <li><strong>Making a call:</strong> the chosen number is passed to Android's dialer or phone app. Your phone's SIM preference and carrier handle the call; ordinary call charges and the phone app's call history may apply.</li>
+            <li><strong>System pickers:</strong> Android and your chosen photo or contact provider manage selection. A provider may use its own cloud service, for example to retrieve a photo; Mochi does not upload your image to it.</li>
+            <li><strong>Contacting us:</strong> if you send an email, call or submit a report, we receive the information you choose to share and use it to respond or investigate. Your email or communications provider handles delivery. Please do not send passwords or unnecessary sensitive information.</li>
+          </ul>
+          <div class="callout"><strong>About this GitHub Pages website</strong>This policy page has no cookies, scripts, analytics, external fonts or tracking resources of its own. When hosted on GitHub Pages, GitHub may process standard web request information, including your IP address, browser information and request time, under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Following a link opens an external service governed by that service's policies.</div>
+          <p class="fine" style="margin-top:18px">Support messages are separate from the app's local data. We keep support correspondence only as needed to handle your request or meet applicable legal obligations. You may ask us to delete it, subject to those obligations.</p>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+          <div class="section-head"><span class="section-number" aria-hidden="true">09</span><h2 id="contact-title">Let's keep it clear</h2></div>
+          <p class="intro">For privacy questions, support, data requests relating to correspondence, or artwork concerns, you can contact the developer directly.</p>
+          <p class="developer">Aftab Fazal · Mochi developer</p>
+          <div class="contact-links">
+            <a href="mailto:ak375456@gmail.com">ak375456@gmail.com <span aria-hidden="true">&nbsp;↗</span></a>
+            <a href="tel:+923370380008">+92 337 0380008</a>
+            <a href="https://github.com/ak375456">GitHub · @ak375456 <span aria-hidden="true">&nbsp;↗</span></a>
+          </div>
+          <p class="fine">This policy describes the current Mochi app. If its features or data practices change, this page will be updated with a new effective date. Review it when updating the app. This page does not grant permission to use any third-party artwork.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer wrap">
+    <p>Mochi · A little company for your screen.<br>Privacy policy · Updated 8 October 2026</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
